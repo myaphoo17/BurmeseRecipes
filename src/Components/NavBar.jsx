@@ -7,10 +7,11 @@ import { PiBowlFoodFill } from "react-icons/pi";
 function NavbarCustom(args) {
   return (
     <>
-      <Navbar className="my-0" color="dark" dark>
-        <NavbarBrand href="/">
-        <div className="ml-8 d-flex align-items-center">
-            <PiBowlFoodFill size={60}  style={{ marginRight: '1rem' }} />
+     <Navbar className="my-0" style={{ backgroundColor: '#F3B664' }}>
+
+        <NavbarBrand >
+        <div className="d-flex align-items-center justify-content-center">
+            <PiBowlFoodFill size={50}  style={{ marginRight: '1rem' }} />
             <div>BURMESE RECIPES</div>
           </div>
            

@@ -1,18 +1,17 @@
 import React from 'react';
-import Home from './Pages/Home'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home';
+import Instructions from './Pages/Instructions';
 
-
-function App() {
-
-
+const App = () => {
   return (
-    <>
-    <div>
-   <Home></Home>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recipes/:recipeId" element={<Instructions />} />
+      </Routes>
+    </Router>
+  );
+};
 
-    </>
-  )
-}
-
-export default App
+export default App;
